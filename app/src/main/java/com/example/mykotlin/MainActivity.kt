@@ -17,10 +17,15 @@ class MainActivity : AppCompatActivity() {
         val human = Human()
 
         human.say()
+        Log.d("私の名前は" + Human.name + "です。" "年は" + Human.age + "歳です。")
         human.think()
+        Log.d("私は" + this.hobby + "について考える。")
 
         val human = Human()
+
         human.say()
+        Log.d("私の名前は" + Human.name + "です。" "年は" + Human.age + "歳です。")
         human.think()
+        Log.d("私は" + this.hobby + "について考える。")
     }
     }
