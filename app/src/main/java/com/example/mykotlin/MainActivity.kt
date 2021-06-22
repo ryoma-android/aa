@@ -1,31 +1,49 @@
 package com.example.mykotlin
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
 
-    private var mTimer: Timer? = null
-    private var mHandrer = Handler()
-
+class MainActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val human = Human()
+        val human = Human("高橋", 22, "バスケ")
 
         human.say()
-        Log.d("私の名前は" + Human.name + "です。" "年は" + Human.age + "歳です。")
-        human.think()
-        Log.d("私は" + this.hobby + "について考える。")
+        Log.d("kotlin", "私の名前は" + human.name + "です。" )
+        Log.d("kotlin", "年は" + human.age + "歳です。")
 
-        val human = Human()
-
-        human.say()
-        Log.d("私の名前は" + Human.name + "です。" "年は" + Human.age + "歳です。")
         human.think()
-        Log.d("私は" + this.hobby + "について考える。")
+        Log.d("kotlin", "私は" + human.hobby + "について考える。")
+
+
+        val human2 = Human("高橋", 22, "バスケ")
+
+        human2.say()
+        Log.d("kotlin", "私の名前は" + human.name + "です。" )
+        Log.d("kotlin", "年は" + human.age + "歳です。")
+
+
+        human2.think()
+        Log.d("kotlin", "私は" + human.hobby + "について考える。")
+
     }
-    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

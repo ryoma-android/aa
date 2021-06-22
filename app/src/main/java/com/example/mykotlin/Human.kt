@@ -1,21 +1,18 @@
 package com.example.mykotlin
 
-open class Human: Animal {
+import android.util.Log
 
-    constructor(name: String, age: Int, hobby: String) : super(name, age, hobby) {
-　　　init {
+  open class Human(name: String, age: Int, hobby: String) : Animal(name, age, hobby) {
 
-            override fun say() {
-                Log.d("私の名前は" + Human.name + "です。" "年は" + Human.age + "歳です。")
-            }
 
-            interface thinkable {
-                override fun think() {
-                    Log.d("私は" + this.hobby + "について考える。")
-                }
-            }
-        }
+      override fun say() {
+         Log.d("kotlin", "私の名前は" + name + "です。" )
+         Log.d("kotlin", "年は" + age + "歳です。")
+     }
 
-        }
-    }
-}
+    open fun think() {
+        Log.d("kotlin", "私は" + hobby + "について考える")
+     }
+ }
+
+
