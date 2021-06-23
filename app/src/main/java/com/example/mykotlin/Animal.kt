@@ -1,6 +1,6 @@
 package com.example.mykotlin
 
-abstract class Animal(var name: String, var age: Int, var hobby: String) {
+abstract class Animal(var name: String, var age: Int) {
 
 
     abstract fun say()
