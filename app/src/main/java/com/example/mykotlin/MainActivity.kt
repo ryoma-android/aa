@@ -1,7 +1,6 @@
 package com.example.mykotlin
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -15,23 +14,18 @@ class MainActivity : AppCompatActivity(){
 
 
         human.say()
-        Log.d("kotlin", "私の名前は" + human.name + "です。"  + "年は" + human.age + "歳です。")
-
 
         human.think()
-        Log.d("kotlin", "私は" + human.hobby + "について考える。")
 
 
-        val human2 = Human("高橋", 22,"バスケ")
+
+        val human2 = Human("田中", 23,"サッカー")
 
 
         human2.say()
-        Log.d("kotlin", "私の名前は" + human.name + "です。" + "年は"  + human.age + "歳です。")
-
-
 
         human2.think()
-        Log.d("kotlin", "私は" + human.hobby + "について考える。")
+
 
     }
 
